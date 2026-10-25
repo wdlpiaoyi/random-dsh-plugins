@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Windows Notifications",
+    "description": "Native Windows toasts (banner + Action Center) when a turn finishes, errors, or needs your answer or approval."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@local/dsh-settings-tweaks",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Move Sign out / Feedback out of the bottom-left account menu into Settings, and make the bottom-left entry open Settings directly.",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# dsh-ops leaves zero-byte lock files next to edited files; they are not part of
+# the plugin.
+*.lock
+.dsh-ops-update-*.lock
+test/

@@ -1,0 +1,50 @@
+{
+  "name": "@local/dsh-win-toast",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "description": "Windows 原生 Toast 通知：任务完成、出错、提问、审批时提醒，点击可跳回对应对话。",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "notification",
+    "toast",
+    "windows"
+  ],
+  "engines": {
+    "dsh": ">=0.1.1-rc.2 <0.3.0"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/bridge.mjs",
+    "test:visual": "node test/harness.mjs"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

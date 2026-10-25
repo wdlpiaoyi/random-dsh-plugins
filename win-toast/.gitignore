@@ -1,0 +1,4 @@
+node_modules/
+test/.tmp/
+*.lock
+.dsh-ops-update-*.lock

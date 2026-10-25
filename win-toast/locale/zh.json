@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Windows 通知",
+    "description": "任务完成、出错、需要你提问或审批时，弹出 Windows 原生通知（横幅 + 通知中心）。"
+  }
+}

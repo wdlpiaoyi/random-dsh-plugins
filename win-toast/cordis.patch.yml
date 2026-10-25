@@ -1,0 +1,9 @@
+# Bundle layer for @local/dsh-win-toast: one host plugin row.
+#
+# Every option has a default in lib/index.js (DEFAULTS) and is documented in
+# README.md. Keep this object empty unless this profile needs an override; not
+# repeating the defaults here means they can change in one place.
+- insert:
+    - id: win-toast
+      name: '@local/dsh-win-toast'
+      config: {}

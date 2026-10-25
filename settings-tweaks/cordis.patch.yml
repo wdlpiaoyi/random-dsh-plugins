@@ -1,0 +1,11 @@
+# settings-tweaks bundle patch: one Host row named after the package itself.
+#
+# The row name matters: the host's client-module scan resolves a Loader row's
+# specifier to a PACKAGE ROOT and reads `dsh.client` from there, so a row named
+# after a subpath would be skipped and the page-side half would never load.
+# This bundle carries no Host behaviour; the row exists only to let the scan
+# find the package root and load `client.js`.
+- insert:
+    - id: settings-tweaks
+      name: '@local/dsh-settings-tweaks'
+      config: {}
